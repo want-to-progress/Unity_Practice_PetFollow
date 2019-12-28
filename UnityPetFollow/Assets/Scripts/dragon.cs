@@ -22,7 +22,7 @@ public class dragon : MonoBehaviour
         {
             Vector3 newDragonPos = Vector3.Lerp(dragonPos.transform.position,
                                                 human.transform.position,
-                                                0.5f * Time.deltaTime);
+                                                0.5f * Time.deltaTime * 2.5f);
             //newDragonPos.z = dragonPos.transform.position.z;
 
             dragonPos.transform.position = newDragonPos;
